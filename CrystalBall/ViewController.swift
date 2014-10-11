@@ -21,9 +21,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed() {
-        NSLog("Button Pressed");
+        self.predictionLabel.text = "Yes";
     }
 
+    @IBOutlet weak var predictionLabel: UILabel!
     
 }
 
