@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //vulnerable example 
+        //let = readonly and var = readwrite
+        //CrystalBall.CrystalBall_Answers = ["1","2"]
     }
     
     /*

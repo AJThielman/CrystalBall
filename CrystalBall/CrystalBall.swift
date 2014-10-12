@@ -10,8 +10,7 @@ import Foundation
 import Darwin
 
 
-
-var CrystalBall_Answers = ["It is certain"
+let CrystalBall_Answers = ["It is certain"
             ,"It is Decidedly so"
             ,"All signs say YES"
             ,"The stars are not aligned"
