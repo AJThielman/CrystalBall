@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         //vulnerable example 
         //let = readonly and var = readwrite
         //CrystalBall.CrystalBall_Answers = ["1","2"]
+        
+        
+        UIImage(named:"bookmark-3")
+
     }
     
     /*
