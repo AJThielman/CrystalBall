@@ -15,6 +15,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+/*
+    //super = parent class = uiViewContoller
+    
+    override func viewDidAppear(_animated: Bool) {
+        var frame = self.predictionLabel.frame;
+        self.predictionLabel.frame = CGRectMake(frame.origin.x, 400, frame.size.width, frame.size.height)
+    }
+*/
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
