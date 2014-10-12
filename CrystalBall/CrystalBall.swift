@@ -11,7 +11,7 @@ import Darwin
 
 
 
-var xx = ["It is certain"
+var CrystalBall_Answers = ["It is certain"
             ,"It is Decidedly so"
             ,"All signs say YES"
             ,"The stars are not aligned"
@@ -21,8 +21,3 @@ var xx = ["It is certain"
             ,"Concentrate and ask again"
             ,"Unable to answer now"
             ,"Maybe yes, maybe no"]
-
-var randomx = Int(arc4random_uniform(UInt32(xx.count)));
-
-var zz = ["test"]
-

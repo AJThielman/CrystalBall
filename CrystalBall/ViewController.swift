@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             //let randomx = Int(arc4random_uniform(UInt32(predictions.count)))
             //self.predictionLabel.text = predictions[randomx]
         
-        self.predictionLabel.text = CrystalBall.xx[Int(arc4random_uniform(UInt32(xx.count)))]
+        self.predictionLabel.text = CrystalBall_Answers[Int(arc4random_uniform(UInt32(CrystalBall_Answers.count)))]
     }
     
     @IBOutlet weak var predictionLabel: UILabel!
