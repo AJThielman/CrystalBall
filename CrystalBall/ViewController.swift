@@ -9,6 +9,20 @@
 import UIKit
 import Darwin
 
+class zz: NSArray {
+    
+    var xx = ["It is certain"
+        ,"It is Decidedly so"
+        ,"All signs say YES"
+        ,"The stars are not aligned"
+        ,"My reply is no"
+        ,"It is doubtful"
+        ,"Better not tell you now"
+        ,"Concentrate and ask again"
+        ,"Unable to answer now"
+        ,"Maybe yes, maybe no"]
+}
+
 class ViewController: UIViewController {
     
     var predictions = ["It is certain"
@@ -42,9 +56,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonPressed() {
-        //self.predictionLabel.text = "Yes";
+            //self.predictionLabel.text = "Yes";
         let randomx = Int(arc4random_uniform(UInt32(predictions.count)))
         self.predictionLabel.text = predictions[randomx]
+        
     }
     
     @IBOutlet weak var predictionLabel: UILabel!
