@@ -19,10 +19,13 @@ class ViewController: UIViewController {
         //let = readonly and var = readwrite
         //CrystalBall.CrystalBall_Answers = ["1","2"]
         
-        
+      
+        /* MONEY!!!
         let backgroundImage = UIImage(named: "bookmark-3")
         let imageview = UIImageView(image: backgroundImage)
         self.view.insertSubview(imageview, atIndex: 0)
+        */
+        
     }
     
     /*

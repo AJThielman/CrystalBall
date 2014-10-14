@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,15 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It is decidely so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq2-8i-bA5">
-                                <rect key="frame" x="16" y="279" width="343" height="109"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkw-kN-WU0">
-                                <rect key="frame" x="153" y="448" width="69" height="39"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookmark-3" translatesAutoresizingMaskIntoConstraints="NO" id="DE0-BB-8wA">
+                                <rect key="frame" x="0.0" y="43" width="375" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DE0-BB-8wA" secondAttribute="height" multiplier="125:51" id="tbb-vf-Otw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkw-kN-WU0">
+                                <rect key="frame" x="153" y="608" width="69" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="BKA-PH-SNW"/>
+                                    <constraint firstAttribute="height" constant="39" id="Swd-3A-Uwg"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="button-off">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,8 +39,25 @@
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgd-Ln-j7r"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq2-8i-bA5">
+                                <rect key="frame" x="16" y="493" width="343" height="38"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.0" blue="0.32549019610000002" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eq2-8i-bA5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GVa-7R-jgH"/>
+                            <constraint firstItem="DE0-BB-8wA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="H0c-pn-lB8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xkw-kN-WU0" secondAttribute="bottom" constant="20" id="IEE-AJ-P3X"/>
+                            <constraint firstItem="eq2-8i-bA5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="J8w-O8-R0z"/>
+                            <constraint firstItem="eq2-8i-bA5" firstAttribute="centerX" secondItem="Xkw-kN-WU0" secondAttribute="centerX" id="L7q-Vk-yOM"/>
+                            <constraint firstItem="DE0-BB-8wA" firstAttribute="centerX" secondItem="Xkw-kN-WU0" secondAttribute="centerX" id="dNN-Vt-NFy"/>
+                            <constraint firstItem="Xkw-kN-WU0" firstAttribute="top" secondItem="eq2-8i-bA5" secondAttribute="bottom" constant="77" id="mh9-v6-fPp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DE0-BB-8wA" secondAttribute="trailing" constant="-16" id="oyd-cX-JX7"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -48,6 +70,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bookmark-3" width="1600" height="805"/>
         <image name="button-off" width="69" height="39"/>
         <image name="button-on" width="69" height="39"/>
     </resources>
