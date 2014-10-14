@@ -6,6 +6,10 @@
 //  Copyright (c) 2014 BroTime. All rights reserved.
 //
 
+// notes // MARK: // TODO:
+
+
+
 import UIKit
 import Darwin
 
@@ -41,11 +45,28 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
+    /*
+    @IBAction func buttonPressed() {
+        //step1
+            //self.predictionLabel.text = "Yes";
+        //step2
+            //let randomx = Int(arc4random_uniform(UInt32(predictions.count)))
+            //self.predictionLabel.text = predictions[randomx]
+        
+        self.predictionLabel.text = CrystalBall_Answers[Int(arc4random_uniform(UInt32(CrystalBall_Answers.count)))]
+    }
+    */
     
+    @IBOutlet weak var predictionLabel: UILabel!
+ 
+// MARK: Motion events
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
         NSLog("Motion began")
+        self.predictionLabel.text = nil;
     }
-  
+    
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
         if ( motion == UIEventSubtype.MotionShake) {
             self.predictionLabel.text = CrystalBall_Answers[Int(arc4random_uniform(UInt32(CrystalBall_Answers.count)))]
@@ -56,17 +77,19 @@ class ViewController: UIViewController {
     override func motionCancelled(motion: UIEventSubtype, withEvent event: UIEvent) {
         NSLog("Motion cancelled")
     }
-    
-    @IBAction func buttonPressed() {
-        //step1
-            //self.predictionLabel.text = "Yes";
-        //step2
-            //let randomx = Int(arc4random_uniform(UInt32(predictions.count)))
-            //self.predictionLabel.text = predictions[randomx]
+
+// MARK: Touch events
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        NSLog("Touch began")
+        self.predictionLabel.text = nil;
         
+    }
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        NSLog("Touch ended")
         self.predictionLabel.text = CrystalBall_Answers[Int(arc4random_uniform(UInt32(CrystalBall_Answers.count)))]
     }
     
-    @IBOutlet weak var predictionLabel: UILabel!
-  
+    override func touchesCancelled(touches: NSSet!, withEvent event: UIEvent!) {
+        NSLog("Touch cancelled")
+    }
 }
