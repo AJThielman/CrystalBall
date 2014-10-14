@@ -20,8 +20,9 @@ class ViewController: UIViewController {
         //CrystalBall.CrystalBall_Answers = ["1","2"]
         
         
-        UIImage(named:"bookmark-3")
-
+        let backgroundImage = UIImage(named: "bookmark-3")
+        let imageview = UIImageView(image: backgroundImage)
+        self.view.insertSubview(imageview, atIndex: 0)
     }
     
     /*
