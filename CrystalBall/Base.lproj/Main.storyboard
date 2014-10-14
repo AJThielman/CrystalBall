@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookmark-3" translatesAutoresizingMaskIntoConstraints="NO" id="DE0-BB-8wA">
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookmark-3" translatesAutoresizingMaskIntoConstraints="NO" id="DE0-BB-8wA">
                                 <rect key="frame" x="0.0" y="43" width="375" height="153"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DE0-BB-8wA" secondAttribute="height" multiplier="125:51" id="tbb-vf-Otw"/>
@@ -31,17 +31,17 @@
                                     <constraint firstAttribute="height" constant="39" id="Swd-3A-Uwg"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="button-off">
+                                <state key="normal" image="button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" image="button-on"/>
+                                <state key="highlighted" image="button (1)"/>
                                 <connections>
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgd-Ln-j7r"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq2-8i-bA5">
                                 <rect key="frame" x="16" y="435" width="343" height="96"/>
-                                <color key="backgroundColor" red="0.078431372550000003" green="0.0" blue="0.32549019610000002" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.070432103169999996" green="0.0" blue="0.29632335399999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="Jsl-ss-n96"/>
                                 </constraints>
@@ -50,7 +50,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.070432103170396984" green="0.0" blue="0.29632335400763354" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eq2-8i-bA5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GVa-7R-jgH"/>
                             <constraint firstItem="DE0-BB-8wA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="H0c-pn-lB8"/>
@@ -74,7 +75,7 @@
     </scenes>
     <resources>
         <image name="bookmark-3" width="1600" height="805"/>
-        <image name="button-off" width="69" height="39"/>
-        <image name="button-on" width="69" height="39"/>
+        <image name="button" width="109" height="38"/>
+        <image name="button (1)" width="109" height="38"/>
     </resources>
 </document>

@@ -42,6 +42,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
+        NSLog("Motion began")
+    }
+  
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
+        if ( motion == UIEventSubtype.MotionShake) {
+            self.predictionLabel.text = CrystalBall_Answers[Int(arc4random_uniform(UInt32(CrystalBall_Answers.count)))]
+        }
+        NSLog("Motion ended")
+    }
+    
+    override func motionCancelled(motion: UIEventSubtype, withEvent event: UIEvent) {
+        NSLog("Motion cancelled")
+    }
+    
     @IBAction func buttonPressed() {
         //step1
             //self.predictionLabel.text = "Yes";
@@ -53,5 +68,5 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var predictionLabel: UILabel!
-    
+  
 }
