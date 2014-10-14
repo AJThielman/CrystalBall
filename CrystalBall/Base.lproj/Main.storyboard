@@ -23,13 +23,13 @@
                                 <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkw-kN-WU0">
-                                <rect key="frame" x="16" y="544" width="343" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkw-kN-WU0">
+                                <rect key="frame" x="153" y="448" width="69" height="39"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Predict">
+                                <state key="normal" image="button-off">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="button-on"/>
                                 <connections>
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgd-Ln-j7r"/>
                                 </connections>
@@ -47,4 +47,8 @@
             <point key="canvasLocation" x="138.5" y="135.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button-off" width="69" height="39"/>
+        <image name="button-on" width="69" height="39"/>
+    </resources>
 </document>
