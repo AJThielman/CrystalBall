@@ -6,9 +6,6 @@
 //  Copyright (c) 2014 BroTime. All rights reserved.
 //
 
-// notes // MARK: // TODO:
-
-
 
 import UIKit
 import Darwin
@@ -60,7 +57,12 @@ class ViewController: UIViewController {
     */
     
     @IBOutlet weak var predictionLabel: UILabel!
- 
+
+// MARK: Make prediction
+    func makePrediction (){
+    self.predictionLabel.text = CrystalBall_Answers[Int(arc4random_uniform(UInt32(CrystalBall_Answers.count)))];
+    }
+    
 // MARK: Motion events
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
         NSLog("Motion began")
@@ -69,7 +71,7 @@ class ViewController: UIViewController {
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
         if ( motion == UIEventSubtype.MotionShake) {
-            self.predictionLabel.text = CrystalBall_Answers[Int(arc4random_uniform(UInt32(CrystalBall_Answers.count)))]
+            [self .makePrediction()]
         }
         NSLog("Motion ended")
     }
@@ -86,10 +88,13 @@ class ViewController: UIViewController {
     }
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         NSLog("Touch ended")
-        self.predictionLabel.text = CrystalBall_Answers[Int(arc4random_uniform(UInt32(CrystalBall_Answers.count)))]
+        [self .makePrediction()]
     }
     
     override func touchesCancelled(touches: NSSet!, withEvent event: UIEvent!) {
         NSLog("Touch cancelled")
     }
 }
+
+
+// notes // MARK: // TODO:

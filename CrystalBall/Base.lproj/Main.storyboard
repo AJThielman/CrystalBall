@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,30 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bookmark-3" translatesAutoresizingMaskIntoConstraints="NO" id="DE0-BB-8wA">
-                                <rect key="frame" x="0.0" y="43" width="375" height="153"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="DE0-BB-8wA" secondAttribute="height" multiplier="125:51" id="tbb-vf-Otw"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CrystalBall0059" translatesAutoresizingMaskIntoConstraints="NO" id="yp8-Yv-Ebe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Prediction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq2-8i-bA5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to predict" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq2-8i-bA5">
                                 <rect key="frame" x="16" y="435" width="343" height="96"/>
-                                <color key="backgroundColor" red="0.070432103169999996" green="0.0" blue="0.29632335399999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="Jsl-ss-n96"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.070432103170396984" green="0.0" blue="0.29632335400763354" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="yp8-Yv-Ebe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="3qz-9N-b51"/>
+                            <constraint firstItem="yp8-Yv-Ebe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="7FB-uF-H67"/>
                             <constraint firstItem="eq2-8i-bA5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GVa-7R-jgH"/>
-                            <constraint firstItem="DE0-BB-8wA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="H0c-pn-lB8"/>
                             <constraint firstItem="eq2-8i-bA5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="J8w-O8-R0z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DE0-BB-8wA" secondAttribute="trailing" constant="-16" id="oyd-cX-JX7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yp8-Yv-Ebe" secondAttribute="trailing" constant="-16" id="UGD-Qc-ahG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yp8-Yv-Ebe" secondAttribute="bottom" id="dyC-tr-8mR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eq2-8i-bA5" secondAttribute="bottom" constant="136" id="oWJ-sy-lbY"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -55,6 +54,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bookmark-3" width="1600" height="805"/>
+        <image name="CrystalBall0059" width="640" height="1136"/>
     </resources>
 </document>
