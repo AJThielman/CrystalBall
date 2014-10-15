@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CrystalBall0059" translatesAutoresizingMaskIntoConstraints="NO" id="yp8-Yv-Ebe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CrystalBall" translatesAutoresizingMaskIntoConstraints="NO" id="yp8-Yv-Ebe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to predict" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq2-8i-bA5">
@@ -45,6 +45,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="yp8-Yv-Ebe" id="08I-6c-f7Q"/>
                         <outlet property="predictionLabel" destination="eq2-8i-bA5" id="uRm-1r-jPq"/>
                     </connections>
                 </viewController>
@@ -54,6 +55,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CrystalBall0059" width="640" height="1136"/>
+        <image name="CrystalBall" width="640" height="1136"/>
     </resources>
 </document>
