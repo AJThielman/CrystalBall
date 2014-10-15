@@ -9,9 +9,16 @@
 
 import UIKit
 import Darwin
+import AVFoundation
+
+
 
 class ViewController: UIViewController {
-    
+
+    @IBOutlet weak var predictionLabel: UILabel!
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    var soundEffect = AVAudioPlayer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,7 +33,12 @@ class ViewController: UIViewController {
         let imageview = UIImageView(image: backgroundImage)
         self.view.insertSubview(imageview, atIndex: 0)
         */
-     
+
+        var soundPath = NSBundle.mainBundle().pathForResource("Whirls", ofType: "m4a")
+        var soundURL = NSURL.fileURLWithPath(soundPath!)
+        self.soundEffect = AVAudioPlayer(contentsOfURL: soundURL, error: nil)
+        //self.soundEffect.play()
+        
         self.backgroundImageView.animationImages =
             [UIImage(named: "CrystalBall0000"),
             UIImage(named: "CrystalBall0001"),
@@ -91,6 +103,7 @@ class ViewController: UIViewController {
         
         self.backgroundImageView.animationDuration = 2.0
         self.backgroundImageView.animationRepeatCount = 1
+        
     }
     
     /*
@@ -120,13 +133,13 @@ class ViewController: UIViewController {
     }
     */
     
-    @IBOutlet weak var predictionLabel: UILabel!
-    @IBOutlet weak var backgroundImageView: UIImageView!
+
 
 // MARK: Make prediction
     func makePrediction (){
     self.backgroundImageView .startAnimating()
     self.predictionLabel.text = CrystalBall_Answers[Int(arc4random_uniform(UInt32(CrystalBall_Answers.count)))];
+      soundEffect.play()
         UIView .animateWithDuration(6.0, animations:{
             self.predictionLabel.alpha = 1
             })

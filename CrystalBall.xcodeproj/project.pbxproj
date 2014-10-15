@@ -14,6 +14,8 @@
 		6D1A49D819E9E2B8006EFA5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1A49D619E9E2B8006EFA5C /* LaunchScreen.xib */; };
 		6D1A49E419E9E2B8006EFA5C /* CrystalBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A49E319E9E2B8006EFA5C /* CrystalBallTests.swift */; };
 		6D4B9EED19EA38C80037C9E1 /* CrystalBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B9EEC19EA38C80037C9E1 /* CrystalBall.swift */; };
+		6D78FC7819EE5202009E27C4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D78FC7719EE5202009E27C4 /* AVFoundation.framework */; };
+		6D78FC7C19EE5EC6009E27C4 /* Whirls.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6D78FC7B19EE5EC6009E27C4 /* Whirls.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		6D1A49E219E9E2B8006EFA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D1A49E319E9E2B8006EFA5C /* CrystalBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalBallTests.swift; sourceTree = "<group>"; };
 		6D4B9EEC19EA38C80037C9E1 /* CrystalBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrystalBall.swift; sourceTree = "<group>"; };
+		6D78FC7719EE5202009E27C4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6D78FC7B19EE5EC6009E27C4 /* Whirls.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Whirls.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D78FC7819EE5202009E27C4 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 		6D1A49BF19E9E2B8006EFA5C = {
 			isa = PBXGroup;
 			children = (
+				6D78FC7719EE5202009E27C4 /* AVFoundation.framework */,
 				6D1A49CA19E9E2B8006EFA5C /* CrystalBall */,
 				6D1A49E019E9E2B8006EFA5C /* CrystalBallTests */,
 				6D1A49C919E9E2B8006EFA5C /* Products */,
@@ -85,6 +91,7 @@
 				6D1A49D419E9E2B8006EFA5C /* Images.xcassets */,
 				6D1A49D619E9E2B8006EFA5C /* LaunchScreen.xib */,
 				6D1A49CB19E9E2B8006EFA5C /* Supporting Files */,
+				6D78FC7B19EE5EC6009E27C4 /* Whirls.m4a */,
 			);
 			path = CrystalBall;
 			sourceTree = "<group>";
@@ -199,6 +206,7 @@
 			files = (
 				6D1A49D319E9E2B8006EFA5C /* Main.storyboard in Resources */,
 				6D1A49D819E9E2B8006EFA5C /* LaunchScreen.xib in Resources */,
+				6D78FC7C19EE5EC6009E27C4 /* Whirls.m4a in Resources */,
 				6D1A49D519E9E2B8006EFA5C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
