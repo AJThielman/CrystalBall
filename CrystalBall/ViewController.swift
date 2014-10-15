@@ -89,7 +89,7 @@ class ViewController: UIViewController {
             UIImage(named: "CrystalBall0058"),
             UIImage(named: "CrystalBall0059")]
         
-        self.backgroundImageView.animationDuration = CFTimeInterval(2.0)
+        self.backgroundImageView.animationDuration = 2.0
         self.backgroundImageView.animationRepeatCount = 1
     }
     
@@ -127,12 +127,16 @@ class ViewController: UIViewController {
     func makePrediction (){
     self.backgroundImageView .startAnimating()
     self.predictionLabel.text = CrystalBall_Answers[Int(arc4random_uniform(UInt32(CrystalBall_Answers.count)))];
+        UIView .animateWithDuration(6.0, animations:{
+            self.predictionLabel.alpha = 1
+            })
     }
     
 // MARK: Motion events
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
         NSLog("Motion began")
         self.predictionLabel.text = nil;
+        self.predictionLabel.alpha = 0
     }
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
@@ -151,6 +155,8 @@ class ViewController: UIViewController {
         NSLog("Touch began")
         
         self.predictionLabel.text = nil;
+        self.predictionLabel.alpha = 0
+
         
     }
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
